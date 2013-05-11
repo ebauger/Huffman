@@ -9,6 +9,9 @@ public class FileReader {
 	private File _target;
 	private final int _bufferSize = 1; //the size of the character buffer to use (IE: how many characters to read)
 	
+	public FileReader(String targetPath) throws FileNotFoundException{
+		this.setTarget(targetPath);
+	}
 	public void setTarget(String targetPath) throws FileNotFoundException
 	{
 		File result = new File(targetPath);
@@ -19,7 +22,7 @@ public class FileReader {
 		_target = result;
 	}
 	
-	public void Read()
+	public void read()
 	{
 		if(_target == null)
 			throw new IllegalStateException("Call setTarget before calling read");
