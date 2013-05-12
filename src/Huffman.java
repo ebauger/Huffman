@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+
 
 public class Huffman {
 	
@@ -18,8 +20,15 @@ public class Huffman {
 		
 	}
 	
+	
 	public static void compress(){
-		
+		try {
+			FileReaderASCII reader = new FileReaderASCII(fileName);
+			reader.read();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public static void decompress(){

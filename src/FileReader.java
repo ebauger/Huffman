@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 
 
@@ -19,6 +20,6 @@ public abstract class FileReader {
 		target = result;
 	}
 	
-	public abstract void read();
+	public abstract ArrayList<String> read();
 
 }
