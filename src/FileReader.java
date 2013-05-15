@@ -20,6 +20,6 @@ public abstract class FileReader {
 		target = result;
 	}
 	
-	public abstract ArrayList<String> read();
+	public abstract ArrayList<Byte> read();
 
 }

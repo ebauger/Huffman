@@ -23,7 +23,7 @@ public class Huffman {
 	
 	public static void compress(){
 		try {
-			FileReaderASCII reader = new FileReaderASCII(fileName);
+			FileReaderBinary reader = new FileReaderBinary(fileName);
 			reader.read();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
